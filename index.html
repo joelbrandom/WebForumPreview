@@ -5,25 +5,25 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
 	<title>Web Forum Index</title>
 	<!--[if !IE]><!-->
-		<link rel="stylesheet" href="beta/absent.css" type="text/css" />
+		<link rel="stylesheet" href="absent.css" type="text/css" />
 	<!--<![endif]-->
 	<!--[if IE]>
 		<link rel="stylesheet" href="absentie.css" type="text/css" />
 	<![endif]-->
 	<script src="hj.js" type="text/javascript"></script>
-	<script src="beta/absent.js" type="text/javascript"></script>
+	<script src="absent.js" type="text/javascript"></script>
 </head>
 
 <body onload="checkLogin('lfholder', 'loggedin');">
 
 <div id="head">
 	<div id="login">
-		<form id="loginform" action="javascript:goLogin();" method="post">
+		<form id="loginform" action="#" method="post">
 			<div id="lfholder">
 				<input id="username" name="username" class="userinput" type="text" maxlength="20"/>
 				<input id="pass" class="userinput" name="password" type="password" maxlength="18"/>
 				<div id="loginbutt">
-					<a href="#" id="plzlogin" onclick="goLogin();return false;" class="menulink">login</a><input type="submit" style="visibility:hidden;position:absolute;"/>
+					<a href="#" id="plzlogin" onclick="return false;" class="menulink">login</a><input type="submit" style="visibility:hidden;position:absolute;"/>
 				</div>
 				<div id="forgot_pass"><a href="#4gotpass">Forgot password?</a><br/>
 					Not registered? <a href="#register">Register now!</a></div>
@@ -31,10 +31,8 @@
 		</form>
 		<div id="loggedi">
 		<div id="loggedin">
-			<div id="usrnm">
-				Sup, <a href="#"><script type="text/javascript">document.write(uncookie);</script></a> (<a href="#">Logout?</a>)<br/>
-				You have <a href="#"></a> new PMs and  total PMs.<br/>
-				<a href="#">Edit Profile</a> | <a href="#">Deposit Experience</a>			</div>
+			<div id="usrnm" style="visibility:hidden;">
+			</div>
 			<div id="account">
 				<a href="#" class="menulink">account</a>
 			</div>
